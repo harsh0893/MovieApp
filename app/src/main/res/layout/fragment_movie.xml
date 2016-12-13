@@ -1,0 +1,75 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.movieapp.MovieActivityFragment"
+    tools:showIn="@layout/activity_movie">
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Fantastic Beasts and where to find them"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="@dimen/fab_margin"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/poster_image_view"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        >
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ratingstar"
+        android:layout_weight="0"
+
+        />
+    <TextView
+        android:id="@+id/rating_text_view"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="12dp"
+        android:layout_gravity="center_vertical"
+        tools:text="7.9/10"/>
+
+    <TextView
+        android:id="@+id/release_date_text_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:textSize="12dp"
+        tools:text="Released on 11 Sept 2016"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:id="@+id/synopsis_text_view"
+        android:gravity="center_vertical"
+        android:padding="@dimen/fab_margin"
+        tools:text="In 1926, Newt Scamander arrives at the Magical Congress of the United States of America with a magically expanded briefcase"
+        />
+
+
+
+
+</LinearLayout>
+</ScrollView>
